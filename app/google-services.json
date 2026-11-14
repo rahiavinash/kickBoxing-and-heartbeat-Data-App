@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "368135126477",
+    "project_id": "kbxc-hrm",
+    "storage_bucket": "kbxc-hrm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368135126477:android:626fe3f37182e05a569884",
+        "android_client_info": {
+          "package_name": "com.app.kickboxing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ8FjQtY9bIuA1v-BNHqOGvJk2Eyi0FlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

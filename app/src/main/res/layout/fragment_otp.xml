@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    tools:context=".Activitys.presentation.Ui.auth.otpFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/_43sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:src="@drawable/arrow"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_89sdp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otp"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@font/dmsans_semibold"
+                android:layout_gravity="center"
+                android:textColor="@color/dialog_white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_otp"
+                android:textColor="@color/dialog_white"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/dmsans_semibold"
+                android:textSize="@dimen/_13sdp"
+                />
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinview"
+                app:itemCount="4"
+                app:itemWidth="@dimen/_57sdp"
+                app:itemHeight="@dimen/_57sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/dialog_white"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:layout_marginEnd="@dimen/_28sdp"
+                android:cursorVisible="true"
+                app:hideLineWhenFilled="false"
+                app:itemRadius="@dimen/_11sdp"
+                app:itemSpacing="@dimen/_11sdp"
+                style="@style/PinWidget.PinView"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tvResendOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resend_otp"
+                android:textColor="@color/dialog_white"
+                android:textSize="16sp"
+                android:fontFamily="@font/dmsans_semibold"
+                android:layout_gravity="center"
+                android:layout_marginTop="58dp"
+                />
+            <Button
+                android:id="@+id/btVerifyOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_otp"
+                android:layout_marginTop="@dimen/_19sdp"
+                android:textSize="16sp"
+                android:paddingVertical="@dimen/_13sdp"
+                android:fontFamily="@font/dmsans_semibold"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:backgroundTint="@color/colorRed"
+                android:textColor="@color/dialog_white"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

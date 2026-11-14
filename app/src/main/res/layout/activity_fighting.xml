@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Fighting"
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/img_app_back"/>
+
+            <Button
+                android:id="@+id/fight_button_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:onClick="viewOnClick"
+                android:background="@color/colorClear"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="59dp"
+                android:background="#AAAAAA"/>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:background="#FFFFFF">
+
+            <view
+                class="com.app.kickboxing.Activitys.presentation.Fight.RoundImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/fight" />
+
+
+            <TextView
+                android:id="@+id/fight_text_blename"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text=""
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/fight_button_connect"
+                android:layout_width="140dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:onClick="viewOnClick"
+                android:text="Device"
+                android:textAllCaps="false"
+                android:background="@drawable/circel_button_connect"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#FFFFFF">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/fight_button_dfu"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:onClick="viewOnClick"
+                        android:text="Upgrade Mode"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/circel_button"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/fight_button_turnoff"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:onClick="viewOnClick"
+                        android:text="Turn Off Device"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/circel_button"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/fight_button_bag"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:onClick="viewOnClick"
+                        android:text="Punching bag Info"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/circel_button"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#20000000"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="Numbers"
+                        android:background="@color/colorClear"
+                        android:textColor="#7F000000"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#20000000"/>
+
+                    <TextView
+                        android:id="@+id/fight_text_number"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:text="--"
+                        android:background="@color/colorClear"
+                        android:textColor="#FF000000"
+                        android:gravity="center"
+                        android:textSize="44sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:background="@color/colorClear"
+                        android:textColor="#FF000000"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#20000000"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="Frequency"
+                        android:background="@color/colorClear"
+                        android:textColor="#7F000000"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#20000000"/>
+
+                    <TextView
+                        android:id="@+id/fight_text_fre"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:text="--"
+                        android:background="@color/colorClear"
+                        android:textColor="#FF000000"
+                        android:gravity="center"
+                        android:textSize="44sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="times/min"
+                        android:background="@color/colorClear"
+                        android:textColor="#FF000000"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#20000000"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="Strength"
+                        android:background="@color/colorClear"
+                        android:textColor="#7F000000"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#20000000"/>
+
+                    <TextView
+                        android:id="@+id/fight_text_power"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:text="--"
+                        android:background="@color/colorClear"
+                        android:textColor="#FF000000"
+                        android:gravity="center"
+                        android:textSize="44sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="kg"
+                        android:background="@color/colorClear"
+                        android:textColor="#FF000000"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fight_frame_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="#AA000000">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Punching bag a(mm)"
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fight_text_length"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:background="@drawable/circel_editview"
+                android:textColor="#FF000000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:onClick="viewOnClick"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Punching bag b(mm)"
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fight_text_width"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:background="@drawable/circel_editview"
+                android:textColor="#FF000000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:onClick="viewOnClick"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Punching bag c(mm)"
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fight_text_height"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:background="@drawable/circel_editview"
+                android:textColor="#FF000000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:onClick="viewOnClick"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Punching bag weight(kg)"
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fight_text_weight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:background="@drawable/circel_editview"
+                android:textColor="#FF000000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:onClick="viewOnClick"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Punching bag type"
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fight_text_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:background="@drawable/circel_editview"
+                android:textColor="#FF000000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:onClick="viewOnClick"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Punching bag sensitivity (5~150)"
+                android:background="@color/colorClear"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fight_text_sens"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:background="@drawable/circel_editview"
+                android:textColor="#FF000000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:onClick="viewOnClick"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#66000000"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#66000000"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorClear">
+
+                    <Button
+                        android:id="@+id/fight_text_cancel"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorClear"
+                        android:text="Cancel"
+                        android:textColor="#0000FF"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:onClick="viewOnClick"/>
+
+                    <Button
+                        android:id="@+id/fight_text_send"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorClear"
+                        android:text="Send"
+                        android:textColor="#0000FF"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:onClick="viewOnClick"/>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

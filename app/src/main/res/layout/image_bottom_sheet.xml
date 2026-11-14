@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:id="@+id/tvSelectType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_type"
+        android:fontFamily="@font/dmsans_semibold"
+        android:textSize="25sp"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/camera"
+        android:textColor="@color/dialog_white"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/dmsans_semibold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tv_photoLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/dialog_white"
+        android:gravity="center"
+        android:text="@string/photo_library"
+        android:padding="@dimen/_10sdp"
+        android:fontFamily="@font/dmsans_semibold"
+        android:textSize="18sp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_gravity="center_horizontal"/>
+
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:backgroundTint="@color/colorRed"
+            android:text="@string/cancel"
+            android:textColor="@color/dialog_white"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

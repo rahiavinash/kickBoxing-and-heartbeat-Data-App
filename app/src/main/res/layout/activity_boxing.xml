@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/boxing_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Boxing"
+            android:background="@color/colorClear"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:onClick="changeAction"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/boxing_text_status"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="No Device"
+            android:background="@color/colorClear"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/img_app_back"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:onClick="backAction"
+            android:background="@color/colorClear"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="Device"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:onClick="deviceAction"
+            android:background="@color/colorClear"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="59dp"
+            android:background="#AAAAAA"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/boxing_text_boxNumber"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Total Punches\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/boxing_text_boxtype"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Punching Type\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/boxing_text_outtime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Punching Time\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/boxing_text_intime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Withdrawing Time\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/boxing_text_power"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="G-Force\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/boxing_text_speed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Punching Speed\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/boxing_text_distance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Punching Distance\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/boxing_text_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Punching Time\n--"
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/boxing_text_axis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:background="@drawable/shape_line"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/boxing_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorClear"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"
+        android:scrollbars="none">
+    </ListView>
+
+
+</LinearLayout>

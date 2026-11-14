@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.kickboxing" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- For Android 10 and below -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+
+
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:name=".Activitys.presentation.MainApplication"
+        android:usesCleartextTraffic="true"
+        android:allowClearUserData="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.app.kickboxing.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity
+            android:name=".Activitys.presentation.Ui.Activities.AuthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activitys.presentation.Ui.Activities.JetpackActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activitys.presentation.Ui.HomesActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/title_activity_past_session_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".Activitys.Ui.Activities.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.presentation.Ui.Activities.HomeActivity"
+            android:exported="true"
+            android:theme="@style/AppThemes" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".Activitys.presentation.Notification.FireMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activitys.presentation.Main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.presentation.ScanDevices.DevicesScanActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activitys.presentation.NewTracker.NewTrackerActivity" />
+        <activity android:name=".Activitys.presentation.NewTracker.RecordActivity" />
+        <activity android:name=".Activitys.presentation.NewScale.NewScaleActivity" />
+        <activity android:name=".Activitys.presentation.BikeComputer.BikeComputerActivity" />
+        <activity android:name=".Activitys.presentation.ArmBand.ArmBandActivity" />
+        <activity android:name=".Activitys.presentation.KettleBell.KettleBellActivity" />
+        <activity android:name=".Activitys.presentation.KettleBell.BellListActivity" />
+        <activity android:name=".Activitys.presentation.KettleBell.SportListActivity" />
+        <activity android:name=".Activitys.presentation.HubConfig.HubConfigActivity" />
+        <activity android:name=".Activitys.presentation.HubConfig.WiFiListActivity" />
+        <activity android:name=".Activitys.presentation.Boxing.BoxingActivity" />
+        <activity android:name=".Activitys.presentation.Cadence.CadenceActivity" />
+        <activity android:name=".Activitys.presentation.Skipping.SkippingActivity" />
+        <activity android:name=".Activitys.presentation.HeartRate.HeartRateActivity" />
+        <activity android:name=".Activitys.presentation.OldTracker.OldTrackerActivity" />
+        <activity android:name=".Activitys.presentation.KTBBQ.KTBBQActivity" />
+        <activity android:name=".Activitys.presentation.Power.PowerActivity" />
+        <activity android:name=".Activitys.presentation.ECG.ECGActivity" />
+        <activity android:name=".Activitys.presentation.BleFunctuon.FunctionActivity" />
+        <activity android:name=".Activitys.presentation.Running.RunningActivity" />
+    </application>
+
+</manifest>

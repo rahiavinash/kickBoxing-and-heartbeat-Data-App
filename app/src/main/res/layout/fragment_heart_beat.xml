@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/heart_beat_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dialog_white"
+    tools:context=".Activitys.presentation.Ui.Activities.HeartBeatFragment">
+
+    <FrameLayout
+        android:id="@+id/frame_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/beat_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/heart_beat"
+            android:textColor="@color/dialog_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_title"
+        >
+
+        <TextView
+            android:id="@+id/heartTextStatus"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_80"
+            android:layout_weight="1"
+            android:background="@drawable/shape_line"
+            android:ellipsize="start"
+            android:padding="@dimen/dp_5"
+            android:text="@string/device"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorGreen"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/heart_text_heart"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/heart__rate"
+        android:padding="@dimen/dp_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/shape_line"
+        android:textColor="@color/dialog_black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

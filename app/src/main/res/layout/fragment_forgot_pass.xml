@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".Activitys.presentation.Ui.auth.ForgotPassFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/_43sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:src="@drawable/arrow"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_89sdp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password_without_underline"
+                android:textSize="24sp"
+                android:fontFamily="@font/dmsans_semibold"
+                android:layout_gravity="center"
+                android:textColor="@color/dialog_white"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address"
+                android:fontFamily="@font/dmsans_semibold"
+                android:textColor="@color/dialog_white"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/dp_25"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:padding="@dimen/_11sdp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textColor="@color/dialog_white"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/dmsans_semibold"
+                android:textColorHint="@color/et_gray"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_email_address"/>
+
+            <Button
+                android:id="@+id/btSendOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_otp"
+                android:fontFamily="@font/dmsans_semibold"
+                android:layout_marginTop="@dimen/_31sdp"
+                android:textSize="16sp"
+                android:paddingVertical="@dimen/_13sdp"
+                android:layout_marginHorizontal="@dimen/dp_30"
+                android:backgroundTint="@color/colorRed"
+                android:textColor="@color/dialog_white"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
